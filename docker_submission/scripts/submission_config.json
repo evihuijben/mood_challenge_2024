@@ -1,0 +1,27 @@
+{
+  "easy_detection": false,
+  "num_workers": 0,
+  "seed": 42,
+  "is_grayscale": 1,
+  "isize": 256,
+  "batch_size": 1,
+  "sub_batch_size": 8,
+  "normalize": true,
+  
+  "perceptual_weight": 0.002,
+  "adv_weight": 0.005,
+  "kl_weight": 0.0,
+
+  "metric_list": ["MAE","LPIPS"],
+  "mask_th_brain": 0.01,
+  "mask_th_abdom": 0.1,
+  
+  "vae_epoch": "best",
+  "checkpoints_dir": "inputs/checkpoints",
+  "training_stats": "inputs/training_stats.csv",
+  "masks_dir": "inputs/general_masks",
+  "lpips_model": "inputs/lpips_model_weights/alex.pth",
+  "alex_weights": "inputs/lpips_model_weights/alexnet-owt-7be5be79.pth",
+  "hist_dir": "inputs/histograms"
+  
+}
